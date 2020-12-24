@@ -1,6 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Spatie\Permission\Models\Role;
+use App\Http\Controllers\User\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +24,8 @@ Route::get('/', function () {
 Auth::routes(["register"=>false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+require 'admin.php';
+
 
 require 'admin.php';
