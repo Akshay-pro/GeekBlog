@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Models\Role;
-use App\Http\Controllers\User\UserController;
 
 
 /*

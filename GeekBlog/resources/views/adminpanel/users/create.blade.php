@@ -7,20 +7,27 @@
     </div>
     
     <h3 class="text-center">Create User</h3>
+
+    @if(count($errors)>0)
+      @foreach($errors->all() as $error)
+        <li class="text-danger animate__animated animate__fadeOut animate__delay-5s">{{$error}}</li>
+      @endforeach
+    @endif
+
     <form action="{{route('user.store')}}" method="post">
     @csrf
 
     <div class="form-group">
       <label for="name"></label>
-      <input type="text" name="name" id="anme" class="form-control" placeholder="Enter Name" aria-describedby="helpId" required>
+      <input type="text" name="name" id="anme" class="form-control" placeholder="Enter Name" aria-describedby="helpId" >
     </div>
     <div class="form-group">
       <label for="email"></label>
-      <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email" aria-describedby="helpId" required>
+      <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email" aria-describedby="helpId" >
     </div>
     <div class="form-group">
       <label for="password"></label>
-      <input type="text" name="password" id="password" class="form-control" placeholder="Enter Password" aria-describedby="helpId" required>
+      <input type="text" name="password" id="password" class="form-control" placeholder="Enter Password" aria-describedby="helpId" >
     </div>
     <div class="form-group">
       <label for="roles"></label>

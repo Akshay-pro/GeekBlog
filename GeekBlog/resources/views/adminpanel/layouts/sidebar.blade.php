@@ -16,6 +16,12 @@
             </a>
           </li>
           <li class="nav-item active  ">
+            <a class="nav-link" href="{{route('role.index' )}}">
+              <i class="material-icons">grading</i>
+              <p>Roles</p>
+            </a>
+          </li>
+          <li class="nav-item active  ">
             <a class="nav-link" href="{{route('user.index' )}}">
               <i class="material-icons">face</i>
               <p>Users</p>

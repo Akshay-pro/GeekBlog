@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\User\UserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
@@ -23,7 +24,7 @@ class UserController extends Controller
         return view('adminpanel.users.create')->with('roles',$this->roles);
     }
 
-    public function store(Request $request){
+    public function store(UserRequest $request){
         $user=User::create($request->all());
         $user->assignRole($request->role_id);
         return $this->redirectUser('User Created Successfully');
@@ -31,7 +32,7 @@ class UserController extends Controller
 
     public function edit(User $user){
         return view('adminpanel.users.edit',compact('user'))->with('roles',$this->roles);
-    }
+    }   
 
     public function update(Request $request, User $user){
         $user->update($request->all());
