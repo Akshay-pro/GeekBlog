@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Role\RoleRequest;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 
@@ -34,13 +35,13 @@ class RoleController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RoleRequest $request)
     {
         $role=new Role();
         $role->name=$request->name;
         $role->save();
 
-        return redirect()->back()->with('success','Role added successfully');
+        return redirect()->route('role.index')->with('success','Role added successfully');
     }
 
     /**

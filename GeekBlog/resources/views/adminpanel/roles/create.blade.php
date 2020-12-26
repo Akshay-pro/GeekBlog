@@ -19,7 +19,7 @@
 
     <div class="form-group">
       <label for="name"></label>
-      <input type="text" name="name" id="anme" class="form-control" placeholder="Enter Name" aria-describedby="helpId" >
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" aria-describedby="helpId" >
     </div>
     
     <button class="btn btn-primary btn-block rounded" type="submit">Create Role</button>
