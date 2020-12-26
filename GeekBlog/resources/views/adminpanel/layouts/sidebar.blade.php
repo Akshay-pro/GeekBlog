@@ -15,6 +15,13 @@
               <p>Dashboard</p>
             </a>
           </li>
+          
+          <li class="nav-item active  ">
+            <a class="nav-link" href="{{route('user.index' )}}">
+              <i class="material-icons">face</i>
+              <p>Users</p>
+            </a>
+          </li>
           <li class="nav-item active  ">
             <a class="nav-link" href="{{route('role.index' )}}">
               <i class="material-icons">grading</i>
@@ -22,9 +29,9 @@
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="{{route('user.index' )}}">
-              <i class="material-icons">face</i>
-              <p>Users</p>
+            <a class="nav-link" href="{{route('permission.index' )}}">
+              <i class="material-icons">work</i>
+              <p>Permission</p>
             </a>
           </li>
           <!-- your sidebar here -->

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\User\PermissionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Spatie\Permission\Models\Role;
