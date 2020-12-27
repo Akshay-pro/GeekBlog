@@ -12,26 +12,32 @@
           <li class="nav-item active">
             <a class="nav-link" href="{{route('admin.dashboard' )}}">
               <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
+              <p class="text-grey">Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('category.index' )}}">
+              <i class="material-icons">all_inbox</i>
+              <p class="text-grey"> Category</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('user.index' )}}">
+              <i class="material-icons">face</i>
+              <p class="text-grey">Users</p>
             </a>
           </li>
           
-          <li class="nav-item active  ">
-            <a class="nav-link" href="{{route('user.index' )}}">
-              <i class="material-icons">face</i>
-              <p>Users</p>
-            </a>
-          </li>
-          <li class="nav-item active  ">
+          <li class="nav-item">
             <a class="nav-link" href="{{route('role.index' )}}">
               <i class="material-icons">grading</i>
-              <p>Roles</p>
+              <p class="text-grey">Roles</p>
             </a>
           </li>
-          <li class="nav-item active  ">
+          <li class="nav-item">
             <a class="nav-link" href="{{route('permission.index' )}}">
               <i class="material-icons">work</i>
-              <p>Permission</p>
+              <p class="text-grey"> Permission</p>
             </a>
           </li>
           <!-- your sidebar here -->
