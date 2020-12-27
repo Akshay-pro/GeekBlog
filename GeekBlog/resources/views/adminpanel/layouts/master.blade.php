@@ -25,7 +25,7 @@
      @include('adminpanel.layouts.navbar');
       <div class="content">
         <div class="container-fluid">
-          @yield('content');
+          @yield('content')
         </div>
       </div>
     </div>

@@ -2,11 +2,13 @@
 @extends('adminpanel.layouts.master');
 
 @section('content')
-    @if(session('success'))
-        <div class="alert alert-success" role="alert">
+@if(session('success'))
+    <div class="animate__animated animate__bounce">
+        <div class="alert alert-success animate__animated animate__fadeOut animate__delay-5s" role="alert">
             {{session('success')}}
         </div>
-    @endif
+    </div>
+@endif
     <dhv class="d-flex justify-content-between">
         <a href="{{route('user.create')}}" class="btn btn-primary rounded">Create User</a>
     </div>

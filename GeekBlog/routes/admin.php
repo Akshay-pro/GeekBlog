@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\User\RoleController;
 // Admin Panel
 
 
@@ -13,7 +13,12 @@ Route::view('/adminpanel','adminpanel.dashboard.index')->name('admin.dashboard')
 Route::resource('/adminpanel/user',User\UserController::class);
 
 //Role Route resource
+
+Route::get('/adminpanel/role/{role}/assign-permission',[RoleController::class,'assignPermissionView'])->name('role.assign.permission');
+Route::post('/adminpanel/role/{role}/assign-permission',[RoleController::class,'assignPermission'])->name('role.store.permission');
+
 Route::resource('/adminpanel/role',User\RoleController::class);
+
 
 //Permission Route resource
 Route::resource('/adminpanel/permission',User\PermissionController::class);
