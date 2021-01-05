@@ -22,6 +22,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{route('post.index' )}}">
+              <i class="material-icons">article</i>
+              <p class="text-grey"> Posts</p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{route('user.index' )}}">
               <i class="material-icons">face</i>
               <p class="text-grey">Users</p>

@@ -14,6 +14,7 @@
   <!-- Animate css -->
   <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link href="{{asset('admin-assets/css/material-dashboard.min.css')}}" rel="stylesheet" />
+  @yield('styles')
 </head>
 
 <body>
@@ -30,6 +31,8 @@
       </div>
     </div>
   </div>
+  @yield('scripts')
+  <script src="{{asset('js/jquery.js')}}"></script>
 </body>
 
 </html>
